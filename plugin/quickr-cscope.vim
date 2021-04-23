@@ -107,7 +107,7 @@ function! s:quickr_cscope(str, query, vert, cmd)
             execute "normal! `Y"
             " We just jumped back to where the command was issued from. So delete the previous
             " buffer, which will be the buffer quickfix jumped to
-            bdelete #
+            " bdelete #
         endif
         call winrestview(view)
 
